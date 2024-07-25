@@ -1,0 +1,10 @@
+../src/csp_service_handler.c:27:6:csp_cmp_set_memcpy	16	static
+../src/csp_service_handler.c:31:12:do_cmp_ident	24	static
+../src/csp_service_handler.c:58:12:do_cmp_route_set_v1	24	static
+../src/csp_service_handler.c:73:12:do_cmp_route_set_v2	24	static
+../src/csp_service_handler.c:89:12:do_cmp_if_stats	24	static
+../src/csp_service_handler.c:109:12:do_cmp_peek	16	static
+../src/csp_service_handler.c:121:12:do_cmp_poke	16	static
+../src/csp_service_handler.c:133:12:do_cmp_clock	32	static
+../src/csp_service_handler.c:157:12:csp_cmp_handler	24	static
+../src/csp_service_handler.c:209:6:csp_service_handler	32	static

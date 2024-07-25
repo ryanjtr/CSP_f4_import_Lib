@@ -1,0 +1,6 @@
+../src/csp_crc32.c:47:6:csp_crc32_init	16	static
+../src/csp_crc32.c:54:6:csp_crc32_update	24	static
+../src/csp_crc32.c:67:10:csp_crc32_final	16	static
+../src/csp_crc32.c:76:10:csp_crc32_memory	24	static
+../src/csp_crc32.c:86:5:csp_crc32_append	24	static
+../src/csp_crc32.c:112:5:csp_crc32_verify	24	static

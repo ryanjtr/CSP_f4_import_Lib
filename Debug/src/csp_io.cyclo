@@ -1,0 +1,13 @@
+../src/csp_io.c:24:14:csp_accept	4
+../src/csp_io.c:39:16:csp_read	4
+../src/csp_io.c:69:6:csp_id_copy	1
+../src/csp_io.c:78:6:csp_send_direct	15
+../src/csp_io.c:201:13:csp_output_hook	3
+../src/csp_io.c:207:6:csp_send_direct_iface	7
+../src/csp_io.c:268:6:csp_send	4
+../src/csp_io.c:292:6:csp_send_prio	1
+../src/csp_io.c:297:5:csp_transaction_persistent	8
+../src/csp_io.c:331:5:csp_transaction_w_opts	2
+../src/csp_io.c:344:16:csp_recvfrom	3
+../src/csp_io.c:355:6:csp_sendto	5
+../src/csp_io.c:390:6:csp_sendto_reply	3

@@ -1,0 +1,3 @@
+../src/drivers/usart/usart_kiss.c:18:12:kiss_driver_tx	32	static
+../src/drivers/usart/usart_kiss.c:27:13:kiss_driver_rx	32	static
+../src/drivers/usart/usart_kiss.c:33:5:csp_usart_open_and_add_kiss_interface	32	static

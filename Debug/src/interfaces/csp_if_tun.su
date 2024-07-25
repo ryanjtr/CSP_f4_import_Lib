@@ -1,0 +1,4 @@
+../src/interfaces/csp_if_tun.c:7:12:csp_crypto_decrypt	24	static
+../src/interfaces/csp_if_tun.c:11:12:csp_crypto_encrypt	24	static
+../src/interfaces/csp_if_tun.c:15:12:csp_if_tun_tx	40	static
+../src/interfaces/csp_if_tun.c:111:6:csp_if_tun_init	16	static

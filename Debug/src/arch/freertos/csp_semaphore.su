@@ -1,0 +1,3 @@
+../src/arch/freertos/csp_semaphore.c:12:6:csp_bin_sem_init	16	static
+../src/arch/freertos/csp_semaphore.c:17:5:csp_bin_sem_wait	16	static
+../src/arch/freertos/csp_semaphore.c:31:5:csp_bin_sem_post	24	static

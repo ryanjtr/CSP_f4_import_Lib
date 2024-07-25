@@ -1,0 +1,4 @@
+../src/interfaces/csp_if_tun.c:7:12:csp_crypto_decrypt	1
+../src/interfaces/csp_if_tun.c:11:12:csp_crypto_encrypt	1
+../src/interfaces/csp_if_tun.c:15:12:csp_if_tun_tx	4
+../src/interfaces/csp_if_tun.c:111:6:csp_if_tun_init	1

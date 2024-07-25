@@ -1,0 +1,8 @@
+../src/csp_buffer.c:19:6:csp_buffer_init	16	static
+../src/csp_buffer.c:37:16:csp_buffer_get_isr	24	static
+../src/csp_buffer.c:57:16:csp_buffer_get	24	static
+../src/csp_buffer.c:75:6:csp_buffer_free_isr	24	static
+../src/csp_buffer.c:103:6:csp_buffer_free	24	static
+../src/csp_buffer.c:130:8:csp_buffer_clone	32	static
+../src/csp_buffer.c:146:6:csp_buffer_refc_inc	24	static
+../src/csp_buffer.c:162:5:csp_buffer_remaining	8	static

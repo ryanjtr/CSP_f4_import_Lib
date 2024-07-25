@@ -1,0 +1,13 @@
+../src/csp_io.c:24:14:csp_accept	24	static
+../src/csp_io.c:39:16:csp_read	24	static
+../src/csp_io.c:69:6:csp_id_copy	16	static
+../src/csp_io.c:78:6:csp_send_direct	56	static
+../src/csp_io.c:201:13:csp_output_hook	96	static
+../src/csp_io.c:207:6:csp_send_direct_iface	48	static
+../src/csp_io.c:268:6:csp_send	24	static
+../src/csp_io.c:292:6:csp_send_prio	24	static
+../src/csp_io.c:297:5:csp_transaction_persistent	40	static
+../src/csp_io.c:331:5:csp_transaction_w_opts	32	static
+../src/csp_io.c:344:16:csp_recvfrom	24	static
+../src/csp_io.c:355:6:csp_sendto	24	static
+../src/csp_io.c:390:6:csp_sendto_reply	40	static

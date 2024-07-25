@@ -1,0 +1,10 @@
+../src/csp_rtable_cidr.c:15:22:csp_rtable_find_exact	24	static
+../src/csp_rtable_cidr.c:27:15:csp_rtable_search_backward	24	static
+../src/csp_rtable_cidr.c:44:15:csp_rtable_find_route	40	static
+../src/csp_rtable_cidr.c:76:5:csp_rtable_set_internal	32	static
+../src/csp_rtable_cidr.c:98:6:csp_rtable_free	8	static
+../src/csp_rtable_cidr.c:102:6:csp_rtable_clear	8	static
+../src/csp_rtable_cidr.c:106:5:csp_rtable_set	24	static
+../src/csp_rtable_cidr.c:121:6:csp_rtable_iterate	24	static
+../src/csp_rtable_cidr.c:129:13:csp_rtable_print_route	24	static
+../src/csp_rtable_cidr.c:138:6:csp_rtable_print	8	static

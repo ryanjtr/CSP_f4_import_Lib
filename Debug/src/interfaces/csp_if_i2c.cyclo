@@ -1,0 +1,3 @@
+../src/interfaces/csp_if_i2c.c:7:5:csp_i2c_tx	3
+../src/interfaces/csp_if_i2c.c:34:6:csp_i2c_rx	4
+../src/interfaces/csp_if_i2c.c:56:5:csp_i2c_add_interface	5

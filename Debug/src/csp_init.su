@@ -1,0 +1,2 @@
+../src/csp_init.c:20:6:csp_init	8	static
+../src/csp_init.c:45:20:csp_get_conf	4	static

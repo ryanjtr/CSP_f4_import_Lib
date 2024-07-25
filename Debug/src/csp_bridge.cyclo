@@ -1,0 +1,3 @@
+../src/csp_bridge.c:12:6:csp_bridge_set_interfaces	1
+../src/csp_bridge.c:18:13:csp_input_hook	2
+../src/csp_bridge.c:24:6:csp_bridge_work	7

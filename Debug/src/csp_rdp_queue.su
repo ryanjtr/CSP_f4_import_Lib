@@ -1,0 +1,9 @@
+../src/csp_rdp_queue.c:14:6:csp_rdp_queue_init	8	static
+../src/csp_rdp_queue.c:24:12:__csp_rdp_queue_flush	32	static
+../src/csp_rdp_queue.c:53:6:csp_rdp_queue_flush	16	static
+../src/csp_rdp_queue.c:64:5:csp_rdp_queue_tx_size	8	static
+../src/csp_rdp_queue.c:68:6:csp_rdp_queue_tx_add	16	static
+../src/csp_rdp_queue.c:75:16:csp_rdp_queue_tx_get	24	static
+../src/csp_rdp_queue.c:92:5:csp_rdp_queue_rx_size	8	static
+../src/csp_rdp_queue.c:96:6:csp_rdp_queue_rx_add	16	static
+../src/csp_rdp_queue.c:103:16:csp_rdp_queue_rx_get	24	static

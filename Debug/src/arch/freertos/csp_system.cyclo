@@ -1,0 +1,2 @@
+../src/arch/freertos/csp_system.c:7:17:csp_memfree_hook	1
+../src/arch/freertos/csp_system.c:15:21:csp_ps_hook	1

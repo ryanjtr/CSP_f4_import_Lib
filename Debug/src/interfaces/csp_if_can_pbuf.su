@@ -1,0 +1,4 @@
+../src/interfaces/csp_if_can_pbuf.c:13:6:csp_can_pbuf_free	32	static
+../src/interfaces/csp_if_can_pbuf.c:46:16:csp_can_pbuf_new	32	static
+../src/interfaces/csp_if_can_pbuf.c:68:6:csp_can_pbuf_cleanup	32	static
+../src/interfaces/csp_if_can_pbuf.c:101:16:csp_can_pbuf_find	32	static

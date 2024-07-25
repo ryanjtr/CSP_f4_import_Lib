@@ -1,0 +1,4 @@
+../src/csp_route.c:29:12:csp_route_check_options	16	static
+../src/csp_route.c:59:12:csp_route_security_check	24	static
+../src/csp_route.c:103:13:csp_input_hook	72	static
+../src/csp_route.c:109:5:csp_route_work	56	static

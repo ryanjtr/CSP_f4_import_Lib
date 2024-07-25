@@ -1,0 +1,13 @@
+../src/csp_iflist.c:15:5:csp_iflist_is_within_subnet	3
+../src/csp_iflist.c:33:15:csp_iflist_get_by_subnet	5
+../src/csp_iflist.c:63:15:csp_iflist_get_by_isdfl	4
+../src/csp_iflist.c:89:15:csp_iflist_iterate	2
+../src/csp_iflist.c:104:6:csp_iflist_check_dfl	4
+../src/csp_iflist.c:122:15:csp_iflist_get_by_addr	3
+../src/csp_iflist.c:136:15:csp_iflist_get_by_name	3
+../src/csp_iflist.c:147:15:csp_iflist_get_by_index	3
+../src/csp_iflist.c:155:5:csp_iflist_add	5
+../src/csp_iflist.c:179:6:csp_iflist_remove	5
+../src/csp_iflist.c:199:15:csp_iflist_get	1
+../src/csp_iflist.c:203:15:csp_bytesize	3
+../src/csp_iflist.c:222:6:csp_iflist_print	2

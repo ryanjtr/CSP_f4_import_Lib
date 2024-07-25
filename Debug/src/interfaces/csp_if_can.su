@@ -1,0 +1,7 @@
+../src/interfaces/csp_if_can.c:46:5:csp_can1_rx	40	static
+../src/interfaces/csp_if_can.c:174:5:csp_can1_tx	72	static
+../src/interfaces/csp_if_can.c:270:5:csp_can2_rx	40	static
+../src/interfaces/csp_if_can.c:379:5:csp_can2_tx	80	static
+../src/interfaces/csp_if_can.c:473:5:csp_can_add_interface	24	static
+../src/interfaces/csp_if_can.c:495:5:csp_can_remove_interface	16	static
+../src/interfaces/csp_if_can.c:506:5:csp_can_rx	32	static
