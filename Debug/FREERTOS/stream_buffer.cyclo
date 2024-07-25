@@ -1,4 +1,6 @@
 ../FREERTOS/stream_buffer.c:319:26:xStreamBufferGenericCreate	5
+../FREERTOS/stream_buffer.c:409:26:xStreamBufferGenericCreateStatic	5
+../FREERTOS/stream_buffer.c:499:16:xStreamBufferGetStaticBuffers	2
 ../FREERTOS/stream_buffer.c:533:6:vStreamBufferDelete	2
 ../FREERTOS/stream_buffer.c:570:12:xStreamBufferReset	3
 ../FREERTOS/stream_buffer.c:631:12:xStreamBufferSetTriggerLevel	3

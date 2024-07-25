@@ -41,7 +41,19 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  /home/ryan/Stmworkspace/test_f4/csp/arch/csp_queue.h \
  /home/ryan/Stmworkspace/test_f4/csp/autoconfig.h \
  /home/ryan/Stmworkspace/test_f4/FREERTOS/include/queue.h \
- /home/ryan/Stmworkspace/test_f4/FREERTOS/include/task.h
+ /home/ryan/Stmworkspace/test_f4/FREERTOS/include/task.h \
+ /home/ryan/Stmworkspace/test_f4/csp/csp_debug.h \
+ /home/ryan/Stmworkspace/test_f4/csp/csp.h \
+ /home/ryan/Stmworkspace/test_f4/csp/csp_rtable.h \
+ /home/ryan/Stmworkspace/test_f4/csp/csp_iflist.h \
+ /home/ryan/Stmworkspace/test_f4/csp/csp_interface.h \
+ /home/ryan/Stmworkspace/test_f4/csp/csp_sfp.h \
+ /home/ryan/Stmworkspace/test_f4/csp/csp_promisc.h \
+ /home/ryan/Stmworkspace/test_f4/csp/drivers/usart.h \
+ /home/ryan/Stmworkspace/test_f4/csp/interfaces/csp_if_kiss.h \
+ /home/ryan/Stmworkspace/test_f4/csp/drivers/can_socketcan.h \
+ /home/ryan/Stmworkspace/test_f4/csp/interfaces/csp_if_can.h \
+ /home/ryan/Stmworkspace/test_f4/csp/interfaces/csp_if_zmqhub.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -86,3 +98,15 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 /home/ryan/Stmworkspace/test_f4/csp/autoconfig.h:
 /home/ryan/Stmworkspace/test_f4/FREERTOS/include/queue.h:
 /home/ryan/Stmworkspace/test_f4/FREERTOS/include/task.h:
+/home/ryan/Stmworkspace/test_f4/csp/csp_debug.h:
+/home/ryan/Stmworkspace/test_f4/csp/csp.h:
+/home/ryan/Stmworkspace/test_f4/csp/csp_rtable.h:
+/home/ryan/Stmworkspace/test_f4/csp/csp_iflist.h:
+/home/ryan/Stmworkspace/test_f4/csp/csp_interface.h:
+/home/ryan/Stmworkspace/test_f4/csp/csp_sfp.h:
+/home/ryan/Stmworkspace/test_f4/csp/csp_promisc.h:
+/home/ryan/Stmworkspace/test_f4/csp/drivers/usart.h:
+/home/ryan/Stmworkspace/test_f4/csp/interfaces/csp_if_kiss.h:
+/home/ryan/Stmworkspace/test_f4/csp/drivers/can_socketcan.h:
+/home/ryan/Stmworkspace/test_f4/csp/interfaces/csp_if_can.h:
+/home/ryan/Stmworkspace/test_f4/csp/interfaces/csp_if_zmqhub.h:

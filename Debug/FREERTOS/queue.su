@@ -1,8 +1,11 @@
 ../FREERTOS/queue.c:303:12:xQueueGenericReset	24	static,ignoring_inline_asm
+../FREERTOS/queue.c:376:19:xQueueGenericCreateStatic	40	static
+../FREERTOS/queue.c:446:16:xQueueGenericGetStaticBuffers	32	static
 ../FREERTOS/queue.c:502:19:xQueueGenericCreate	48	static
 ../FREERTOS/queue.c:566:13:prvInitialiseNewQueue	24	static
 ../FREERTOS/queue.c:614:17:prvInitialiseMutex	16	static
 ../FREERTOS/queue.c:644:19:xQueueCreateMutex	32	static
+../FREERTOS/queue.c:664:19:xQueueCreateMutexStatic	40	static
 ../FREERTOS/queue.c:939:12:xQueueGenericSend	48	static,ignoring_inline_asm
 ../FREERTOS/queue.c:1157:12:xQueueGenericSendFromISR	64	static,ignoring_inline_asm
 ../FREERTOS/queue.c:1326:12:xQueueGiveFromISR	56	static,ignoring_inline_asm

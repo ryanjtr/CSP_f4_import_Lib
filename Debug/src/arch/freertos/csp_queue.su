@@ -1,4 +1,4 @@
-../src/arch/freertos/csp_queue.c:9:20:csp_queue_create_static	24	static
+../src/arch/freertos/csp_queue.c:9:20:csp_queue_create_static	32	static
 ../src/arch/freertos/csp_queue.c:13:5:csp_queue_enqueue	24	static
 ../src/arch/freertos/csp_queue.c:22:5:csp_queue_enqueue_isr	24	static
 ../src/arch/freertos/csp_queue.c:29:5:csp_queue_dequeue	24	static

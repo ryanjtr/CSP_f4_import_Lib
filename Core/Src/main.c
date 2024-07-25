@@ -24,6 +24,16 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "csp_buffer.h"
+#include "FreeRTOSConfig.h"
+#include <csp/csp_debug.h>
+#include <string.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+#include <csp/csp.h>
+#include <csp/drivers/usart.h>
+#include <csp/drivers/can_socketcan.h>
+#include <csp/interfaces/csp_if_zmqhub.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,13 +68,13 @@ static void MX_CAN1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-static void Status_Led_Task( void *pvParameters )
-{
-	while(1)
-	{
-
-	}
-}
+//static void Status_Led_Task( void *pvParameters )
+//{
+//	while(1)
+//	{
+//
+//	}
+//}
 /* USER CODE END 0 */
 
 /**
@@ -98,7 +108,19 @@ int main(void)
   MX_GPIO_Init();
   MX_CAN1_Init();
   /* USER CODE BEGIN 2 */
-  xTaskCreate(Status_Led_Task, "statusLEDTask", configMINIMAL_STACK_SIZE * 10, NULL, 2, &status_task_Handle);
+
+  /* Init CSP */
+  csp_init();
+
+  /* Add interface(s) */
+    csp_iface_t CSP_IF_UART = {
+  		  .name = "CSP IF UART",
+  		  .driver_data = &hcan1,
+  		  .nexthop = ccsp_kiss_tx,
+    };
+  csp_iface_t * default_iface = NULL;
+
+//  xTaskCreate(Status_Led_Task, "statusLEDTask", configMINIMAL_STACK_SIZE * 10, NULL, 2, &status_task_Handle);
   /* USER CODE END 2 */
 
   /* Infinite loop */

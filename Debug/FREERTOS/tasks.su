@@ -1,3 +1,5 @@
+../FREERTOS/tasks.c:1246:20:prvCreateStaticTask	48	static
+../FREERTOS/tasks.c:1301:18:xTaskCreateStatic	48	static
 ../FREERTOS/tasks.c:1612:20:prvCreateTask	48	static
 ../FREERTOS/tasks.c:1710:16:xTaskCreate	40	static
 ../FREERTOS/tasks.c:1785:13:prvInitialiseNewTask	32	static
@@ -14,7 +16,7 @@
 ../FREERTOS/tasks.c:3288:23:prvTaskIsTaskSuspended	32	static
 ../FREERTOS/tasks.c:3358:10:vTaskResume	24	static,ignoring_inline_asm
 ../FREERTOS/tasks.c:3419:16:xTaskResumeFromISR	48	static,ignoring_inline_asm
-../FREERTOS/tasks.c:3513:19:prvCreateIdleTasks	48	static
+../FREERTOS/tasks.c:3513:19:prvCreateIdleTasks	72	static
 ../FREERTOS/tasks.c:3657:6:vTaskStartScheduler	16	static,ignoring_inline_asm
 ../FREERTOS/tasks.c:3760:6:vTaskEndScheduler	16	static,ignoring_inline_asm
 ../FREERTOS/tasks.c:3775:6:vTaskSuspendAll	4	static,ignoring_inline_asm
@@ -23,6 +25,7 @@
 ../FREERTOS/tasks.c:4093:12:xTaskGetTickCountFromISR	16	static
 ../FREERTOS/tasks.c:4128:13:uxTaskGetNumberOfTasks	4	static
 ../FREERTOS/tasks.c:4140:8:pcTaskGetName	24	static
+../FREERTOS/tasks.c:4373:16:xTaskGetStaticBuffers	32	static
 ../FREERTOS/tasks.c:4588:12:xTaskCatchUpTicks	24	static
 ../FREERTOS/tasks.c:4712:12:xTaskIncrementTick	40	static
 ../FREERTOS/tasks.c:5095:10:vTaskSwitchContext	24	static,ignoring_inline_asm
