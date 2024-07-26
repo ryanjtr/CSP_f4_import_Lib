@@ -35,6 +35,7 @@ Lwip/src/core/ipv4 \
 Lwip/src/core/ipv6 \
 Lwip/src/netif \
 Lwip/src/netif/ppp \
+UART_DRIVER/Src \
 src/arch/freertos \
 src/crypto \
 src \

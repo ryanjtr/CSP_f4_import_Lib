@@ -14,6 +14,7 @@ RM := rm -rf
 -include src/crypto/subdir.mk
 -include src/arch/freertos/subdir.mk
 -include src/subdir.mk
+-include UART_DRIVER/Src/subdir.mk
 -include Lwip/src/netif/ppp/subdir.mk
 -include Lwip/src/netif/subdir.mk
 -include Lwip/src/core/ipv6/subdir.mk

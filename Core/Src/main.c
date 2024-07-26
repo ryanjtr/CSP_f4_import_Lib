@@ -29,11 +29,12 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
-
 #include <csp/csp.h>
 #include <csp/drivers/usart.h>
 #include <csp/drivers/can_socketcan.h>
 #include <csp/interfaces/csp_if_zmqhub.h>
+
+#include "uart_stm32.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -52,7 +53,7 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-CAN_HandleTypeDef hcan1;
+UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
 TaskHandle_t   status_task_Handle;
@@ -61,7 +62,7 @@ TaskHandle_t   status_task_Handle;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_CAN1_Init(void);
+static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -106,19 +107,27 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_CAN1_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+
+  csp_usart_conf_t uart_conf;
+  uart_conf.baudrate=115200;
+  uart_conf.
+  databits=8;
+  uart_conf.device=&huart1;
+  uart_conf.paritysetting=1;
+  uart_conf.stopbits=1;
 
   /* Init CSP */
   csp_init();
 
   /* Add interface(s) */
-    csp_iface_t CSP_IF_UART = {
-  		  .name = "CSP IF UART",
-  		  .driver_data = &hcan1,
-  		  .nexthop = ccsp_kiss_tx,
-    };
-  csp_iface_t * default_iface = NULL;
+  csp_iface_t CSP_IF_CAN = {
+  		  .name = "CSP IF CAN",
+  		  .driver_data = &huart1,
+		  .nexthop = csp_uart_write_stm32,
+  };
+  //		  .nexthop = csp_can_tx_stm32,
 
 //  xTaskCreate(Status_Led_Task, "statusLEDTask", configMINIMAL_STACK_SIZE * 10, NULL, 2, &status_task_Handle);
   /* USER CODE END 2 */
@@ -181,39 +190,35 @@ void SystemClock_Config(void)
 }
 
 /**
-  * @brief CAN1 Initialization Function
+  * @brief USART1 Initialization Function
   * @param None
   * @retval None
   */
-static void MX_CAN1_Init(void)
+static void MX_USART1_UART_Init(void)
 {
 
-  /* USER CODE BEGIN CAN1_Init 0 */
+  /* USER CODE BEGIN USART1_Init 0 */
 
-  /* USER CODE END CAN1_Init 0 */
+  /* USER CODE END USART1_Init 0 */
 
-  /* USER CODE BEGIN CAN1_Init 1 */
+  /* USER CODE BEGIN USART1_Init 1 */
 
-  /* USER CODE END CAN1_Init 1 */
-  hcan1.Instance = CAN1;
-  hcan1.Init.Prescaler = 16;
-  hcan1.Init.Mode = CAN_MODE_NORMAL;
-  hcan1.Init.SyncJumpWidth = CAN_SJW_1TQ;
-  hcan1.Init.TimeSeg1 = CAN_BS1_1TQ;
-  hcan1.Init.TimeSeg2 = CAN_BS2_1TQ;
-  hcan1.Init.TimeTriggeredMode = DISABLE;
-  hcan1.Init.AutoBusOff = DISABLE;
-  hcan1.Init.AutoWakeUp = DISABLE;
-  hcan1.Init.AutoRetransmission = DISABLE;
-  hcan1.Init.ReceiveFifoLocked = DISABLE;
-  hcan1.Init.TransmitFifoPriority = DISABLE;
-  if (HAL_CAN_Init(&hcan1) != HAL_OK)
+  /* USER CODE END USART1_Init 1 */
+  huart1.Instance = USART1;
+  huart1.Init.BaudRate = 115200;
+  huart1.Init.WordLength = UART_WORDLENGTH_8B;
+  huart1.Init.StopBits = UART_STOPBITS_1;
+  huart1.Init.Parity = UART_PARITY_NONE;
+  huart1.Init.Mode = UART_MODE_TX_RX;
+  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_UART_Init(&huart1) != HAL_OK)
   {
     Error_Handler();
   }
-  /* USER CODE BEGIN CAN1_Init 2 */
+  /* USER CODE BEGIN USART1_Init 2 */
 
-  /* USER CODE END CAN1_Init 2 */
+  /* USER CODE END USART1_Init 2 */
 
 }
 
